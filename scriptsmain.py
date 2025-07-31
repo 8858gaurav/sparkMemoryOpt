@@ -10,6 +10,10 @@
 # .6 or .4 boundaries can also be changed, by spark.memory.fraction = .6 (by default)
 # 0.5 boundaries b/w storage, & execution memory can also be changed, spark.memory.storageFraction = .5 (default)
 
+# hash table will be created outside your JVM(means onheap Memory), so it take some memory from the off-heap.
+# on heap Memory managed by JVM
+# off Heap Memory will be managed by your OS.
+
 # run this file by using spark-submit command: 
 # spark-submit --deploy-mode cluster --master yarn --num-executors 1 --executor-cores 4 --executor-memory 8G --conf spark.dynamicAllocation.enabled=false scripts3.py
 
