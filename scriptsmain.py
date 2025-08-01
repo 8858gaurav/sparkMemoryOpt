@@ -25,7 +25,7 @@
 # size of machine: yarn.nodemanager.resource.memory-mb : 51 GB
 
 # if we are not requesting, then offHeap, and Pyspark Memory will become 0 for both.
-# if we want to use python library, then it will initiates a python worker, then it use Pyspark Memory, other wise spark with java or spark with scala, this is 0.
+# if we want to use heavy -2 python library, then it will initiates a python worker, then it use Pyspark Memory, other wise spark with java or spark with scala, this is 0.
 # how to request - spark.executor.pyspark.memory
 
 # off Heap memory (Outside the JVM): No garbage collection required, i.e it's faster than onheap memory, in terms of gc times.
