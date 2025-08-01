@@ -57,7 +57,7 @@ if __name__ == '__main__':
 # 1                    0.0 B / 366.3 MiB     1
 # 2                    0.0 B / 366.3 MiB     1
 
-# 384 Mb reserved for overhead
+# 384 Mb reserved for overhead on each executors, and which we haven't requested.
 # 300 Mb reserved for spark engine on each executors
 # each executors left with 1000 - 300 = 700MB
 # 60 % of 700 Mb = 420 MB (Unified area)
